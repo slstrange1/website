@@ -1,3 +1,8 @@
+<?php
+require ("system/database.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +36,23 @@
                   'about' => [
                       'link' => '/about.php',
                       'label' => 'About',
+                  ],
+
+                  'blog' => [
+                      'link' => '/blog.php',
+                      'label' => 'Blog',
+                  ],
+
+                  'admin' => [
+                      'link' => '/admin.php',
+                      'label' => 'Admin',
+                  ],
+
+                  'tools' => [
+                      'link' => '/tools.php',
+                      'label' => 'Tools',
                   ]
+            
               ];
               foreach($items as $key => $item){
                   echo "<li class=\"nav-item\">
